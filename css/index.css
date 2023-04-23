@@ -1,0 +1,26 @@
+/* Body Styling */
+body {
+    margin: 0;
+    grid-template-columns: 5vw 1fr 5vw;
+    grid-template-rows: min-content;
+    display: grid;
+}
+
+/* Header Styling */
+header {
+    background-color: black;
+    grid-column: 1/span max;
+    grid-row: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-color: rgb(102, 102, 102);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+/* Header Logo Styling */
+header #headerlogo {
+    width: clamp(10vw, 25vw, 25vw);
+    padding: 1em;
+}
