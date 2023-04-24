@@ -1,7 +1,8 @@
 /* Body Styling */
 body {
     grid-template-columns: 5vw 1fr 5vw;
-    grid-template-rows: min-content;
+    grid-template-rows: min-content min-content min-content;
+    font-family: "Verdana", serif;
     margin: 0;
 
     display: grid;
@@ -9,9 +10,9 @@ body {
 
 
 /* Header Styling */
-header {
+.header {
     grid-column: 1/span max;
-    grid-row: auto;
+    grid-row: 1;
     background: black;
     border-bottom-color: rgb(102, 102, 102);
     border-bottom-style: solid;
@@ -22,15 +23,16 @@ header {
     align-items: center;
 }
 
-header #headerlogo {
+.header #headerlogo {
     padding: 1em;
     width: clamp(10vw, 25vw, 25vw);
 }
 
 
 /* Navbar Styling */
-nav {
+.navbar {
     grid-column: 1/span max;
+    grid-row: 2;
     background: black;
     color: white;
     height: 3em;
@@ -96,5 +98,43 @@ nav {
 
 .has-dropdown:focus-within .dropdown {
     display: block;
+}
+
+
+/* Content Grid Styling */
+.content-grid {
+    grid-column: 1/span max;
+    grid-row: 3;
+    grid-template-areas:
+            'articles'
+            'carousel';
+    grid-gap: 5vw;
+    padding: 5vw;
+
+    display: grid;
+}
+
+/* Article Section Styling */
+.article-section {
+    grid-area: articles;
+    /* Placeholder to show area */
+    border: 0.1em solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Carousel Section Styling */
+.carousel-section {
+    grid-area: carousel;
+    /* Placeholder to show area */
+    border: 0.1em solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 }
 
