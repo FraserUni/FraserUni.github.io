@@ -1,26 +1,65 @@
 /* Body Styling */
 body {
-    margin: 0;
     grid-template-columns: 5vw 1fr 5vw;
     grid-template-rows: min-content;
+    margin: 0;
+
     display: grid;
 }
 
 /* Header Styling */
 header {
-    background-color: black;
     grid-column: 1/span max;
     grid-row: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: black;
     border-bottom-color: rgb(102, 102, 102);
     border-bottom-style: solid;
     border-bottom-width: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Header Logo Styling */
 header #headerlogo {
-    width: clamp(10vw, 25vw, 25vw);
     padding: 1em;
+    width: clamp(10vw, 25vw, 25vw);
+}
+
+/* Navbar Styling */
+nav {
+    grid-column: 1/span max;
+    background: black;
+    color: white;
+    height: 3em;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: inherit;
+}
+
+.navbar-nav li {
+    height: inherit;
+    text-align: center;
+    width: 100%;
+}
+
+/* Setting Navbar Item Anchors to Same Size as Text */
+.navbar-nav li a {
+    text-decoration: none;
+    color: inherit;
+    height: inherit;
+    width: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
