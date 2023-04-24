@@ -38,8 +38,8 @@ nav {
 
 .navbar-nav {
     list-style-type: none;
-    margin: 0;
     padding: 0 5vw;
+    margin: 0;
 
     display: flex;
     align-items: center;
@@ -47,19 +47,46 @@ nav {
     height: inherit;
 }
 
-.navbar-nav li {
+.nav-item {
     height: inherit;
     text-align: center;
     width: 100%;
 }
 
-.navbar-nav li a {
+.nav-item a {
     text-decoration: none;
     color: inherit;
-    height: inherit;
     width: inherit;
+    height: inherit;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.dropdown {
+    background: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 0;
+
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0;
+    float: none;
+
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
