@@ -1,8 +1,9 @@
 /* Body Styling */
 body {
     grid-template-columns: 5vw 1fr 5vw;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content;
     font-family: "Verdana", serif;
+    font-size: 1em;
     margin: 0;
 
     display: grid;
@@ -23,7 +24,7 @@ body {
     align-items: center;
 }
 
-.header #headerlogo {
+#headerlogo {
     padding: 1em;
     width: clamp(10vw, 25vw, 25vw);
 }
@@ -137,4 +138,69 @@ body {
     justify-content: center;
     height: 50vh;
 }
+
+
+/* Footer Styling */
+.footer {
+    grid-column: 1/span max;
+    grid-row: 4;
+    background: black;
+    padding: 1em 5vw;
+}
+
+#footerlogo {
+    width: clamp(5vw, 15vw, 15vw);
+}
+
+#footerslogan {
+    color: white;
+    font-size: 0.875em;
+    margin: 0;
+    padding: 1em 0 0 0;
+}
+
+.footericons {
+
+}
+
+.footerlinks-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 1em;
+}
+
+.footerlink-item {
+    text-align: center;
+    padding: 0 1em 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.footerlink-item a {
+    text-decoration: none;
+    font-size: 0.75em;
+    color: white;
+    height: 1em;
+}
+
+.footerlink-item a:hover {
+    text-decoration: underline;
+}
+
+#footercopyright {
+    color: white;
+    font-size: 0.625em;
+    margin: 0;
+}
+
+
+
 
