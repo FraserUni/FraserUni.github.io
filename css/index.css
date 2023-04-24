@@ -144,6 +144,8 @@ body {
 .footer {
     grid-column: 1/span max;
     grid-row: 4;
+    text-align: center;
+    color: white;
     background: black;
     padding: 1em 5vw;
 }
@@ -153,8 +155,7 @@ body {
 }
 
 #footerslogan {
-    color: white;
-    font-size: 0.875em;
+    font-size: 0.8em;
     margin: 0;
     padding: 1em 0 0 0;
 }
@@ -170,13 +171,13 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     height: 1em;
 }
 
 .footerlink-item {
     text-align: center;
-    padding: 0 1em 0 0;
+    padding: 0 1em;
 
     display: flex;
     align-items: center;
@@ -196,7 +197,6 @@ body {
 }
 
 #footercopyright {
-    color: white;
     font-size: 0.625em;
     margin: 0;
 }
