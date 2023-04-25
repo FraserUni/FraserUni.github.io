@@ -115,16 +115,45 @@ body {
     display: grid;
 }
 
-/* Article Section Styling */
+/* Recipe Section Styling */
 .recipe-section {
     grid-area: recipes;
-    /* Placeholder to show area */
-    border: 0.1em solid black;
+    text-align: center;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 85vh;
+.recipe-section h1, h2, h3 {
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+
+.recipe-section p {
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-cards {
+    list-style-type: none;
+    margin: 0;
+    padding: 2.5vw 0 0 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5vw;
+}
+
+.recipe-item a {
+    text-decoration: none;
+    color: inherit;
+    width: min-content;
+}
+
+.recipe-item a:hover {
+    text-decoration: underline;
+}
+
+.recipe-item img {
+    border-radius: 5%;
+    padding: 0 0 0.5em 0;
 }
 
 
