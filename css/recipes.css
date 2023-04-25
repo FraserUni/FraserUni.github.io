@@ -1,7 +1,7 @@
 /* Body Styling */
 body {
     grid-template-columns: 5vw 1fr 5vw;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-rows: repeat(4, min-content);
     font-family: "Verdana", serif;
     font-size: 1em;
     margin: 0;
@@ -119,6 +119,7 @@ body {
 .recipe-section {
     grid-area: recipes;
     text-align: center;
+    width: 90vw;
 }
 
 .recipe-section h1, h2, h3 {
@@ -137,8 +138,9 @@ body {
     padding: 2.5vw 0 0 0;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2.5vw;
+    width: 90vw;
 }
 
 .recipe-item a {
@@ -168,7 +170,7 @@ body {
 }
 
 #footerlogo {
-    width: clamp(5vw, 15vw, 15vw);
+    width: clamp(10vw, 25vw, 25vw);
 }
 
 #footerslogan {
