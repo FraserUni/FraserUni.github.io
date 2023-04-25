@@ -108,8 +108,7 @@ body {
     grid-column: 1/span max;
     grid-row: 3;
     grid-template-areas:
-            'articles'
-            'carousel';
+            'recipes';
     grid-gap: 5vw;
     padding: 5vw;
 
@@ -117,8 +116,8 @@ body {
 }
 
 /* Article Section Styling */
-.article-section {
-    grid-area: articles;
+.recipe-section {
+    grid-area: recipes;
     /* Placeholder to show area */
     border: 0.1em solid black;
 
@@ -126,18 +125,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 85vh;
-}
-
-/* Carousel Section Styling */
-.carousel-section {
-    grid-area: carousel;
-    /* Placeholder to show area */
-    border: 0.1em solid black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
 }
 
 

@@ -1,0 +1,58 @@
+{
+  "recipes-everyday": [
+    {
+      "name": "Healthy Shakshuka",
+      "image": "sources/images/recipes-everyday/large/shakshuka.webp",
+      "tagline": "Start the day on a lighter note with this satisfying shakshuka, a wonderful pan full of tomatoes, pepper, spinach and eggs. It packs in four of your 5-a-day.",
+      "ingredients": ["1 tbsp cold pressed rapeseed oil",
+        "1 red onion, cut into thin wedges",
+        "1 red pepper, finely sliced",
+        "1 yellow pepper, finely sliced",
+        "3 large garlic cloves, crushed",
+        "1 tsp cumin seeds",
+        "1 tsp coriander seeds, crushed",
+        "1 heaped tsp sweet smoked paprika",
+        "400g can cherry tomatoes",
+        "115g baby spinach",
+        "4 medium eggs",
+        "½ small bunch coriander, roughly chopped",
+        "½ small bunch dill, roughly chopped"],
+      "method": ["Heat the oil in a large, non-stick frying pan.Add the onion and peppers and fry over a medium heat for 8-10 mins until the veg is beginning to soften. Add the garlic, cumin, coriander and paprika and fry for 1 min more. Tip in the tomatoes, spinach and 100ml water and bubble until the spinach has wilted, then lower to a simmer and cook, uncovered, for 10 mins. Season to taste.",
+        "Make four indentations in the tomato mixture and gently crack an egg into each one. Cover with a lid or foil and cook over a gentle heat for 8-10 mins, or until the eggs are just set. Uncover, scatter with the fresh herbs and serve."]
+    },
+    {
+      "name": "Recipe2",
+      "ingredients": ["ingredients1", "ingredients2", "..."],
+      "method": ["method1", "method2", "..."]
+    },
+    "..."
+  ],
+
+  "recipes-dishes": [
+    {
+      "name": "Recipe1",
+      "ingredients": ["ingredients1", "ingredients2", "..."],
+      "method": ["method1", "method2", "..."]
+    },
+    {
+      "name": "Recipe2",
+      "ingredients": ["ingredients1", "ingredients2", "..."],
+      "method": ["method1", "method2", "..."]
+    },
+    "..."
+  ],
+
+  "recipes-baking-and-desserts": [
+    {
+      "name": "Recipe1",
+      "ingredients": ["ingredients1", "ingredients2", "..."],
+      "method": ["method1", "method2", "..."]
+    },
+    {
+      "name": "Recipe2",
+      "ingredients": ["ingredients1", "ingredients2", "..."],
+      "method": ["method1", "method2", "..."]
+    },
+    "..."
+  ]
+}
