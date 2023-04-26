@@ -1,3 +1,4 @@
+// Everyday Recipes
 const everyday = [{
         name: "Easy Tomato Pasta",
         image: "sources/images/recipes-everyday/easy-tomato-pasta.webp",
@@ -51,9 +52,9 @@ const everyday = [{
             "4 tbsp sweet chilli sauce"],
         method: [
             "Heat the oil in a wok or frying pan.",
-            "Add the mince, break it up with a spoon and fry over a high heat for about 8 mins until browning.",
-            "While the meat cooks, pour the hot water over the noodles and set aside for 5-10 mins to soften.",
-            "Add the ginger, garlic and veg to the pan and stir-fry for 2-3 mins.",
+            "Add the mince, break it up with a spoon and fry over a high heat for about 8 minutes until browning.",
+            "While the meat cooks, pour the hot water over the noodles and set aside for 5-10 minutes to soften.",
+            "Add the ginger, garlic and veg to the pan and stir-fry for 2-3 minutes.",
             "Mix 1 tbsp soy sauce with the cornflour to make a paste.",
             "Add the remaining soy sauce, the chilli sauce and 2 tbsp water.",
             "Drain the noodles and add to the pan with the sauce.",
@@ -118,38 +119,85 @@ const everyday = [{
     }
 ]
 
-function getEverydayIndex(index) {
-    localStorage.setItem("recipesEverydayIndex", index);
-}
-
+// Variable assignment
 let name = everyday[localStorage.getItem("recipesEverydayIndex")].name;
 let image = everyday[localStorage.getItem("recipesEverydayIndex")].image;
 let tagline = everyday[localStorage.getItem("recipesEverydayIndex")].tagline;
 let ingredients = everyday[localStorage.getItem("recipesEverydayIndex")].ingredients;
 let method = everyday[localStorage.getItem("recipesEverydayIndex")].method;
 
+let ingredientssection = document.getElementById("ingredients-section");
+let methodsection = document.getElementById("method-section");
+
+/**
+ * setEveryDayIndex
+ * Creates key and value in local storage
+ * @param index, Index of recipe details to display
+ */
+function setEverydayIndex(index) {
+    localStorage.setItem("recipesEverydayIndex", index);
+}
+
 if (document.getElementById("recipe-header-section") != null) {
+    // Insert recipe name into page title
     document.title = `${name} | Recipes, Cooking & More - My Kitchen`;
+    // Populate recipe-header-section
     document.getElementById("recipe-header-section").innerHTML = `
-        <h2>${name}</h2>
+        <h1>${name}</h1>
         <img src="${image}" alt="${name} Image">
         <p>${tagline}</p>`;
+    // Populate ingredients-section
     document.getElementById("ingredients-section").innerHTML = `
-        <h2>Ingredients:</h2>
-        <ul>${ingredients}</ul>`;
+        <h3>Ingredients:</h3>`;
+    // Populate method-section
     document.getElementById("method-section").innerHTML = `
-        <h2>Method:</h2>  
-        <ul>${method}</ul>`;
+        <h3>Method:</h3>`;
 }
 
-
-
-/*
-function getDishesIndex(index) {
-    localStorage.setItem("recipesEverydayIndex", index);
-}
-
-function getBakingIndex(index) {
-    localStorage.setItem("recipesEverydayIndex", index);
-}
+/**
+ * arrToUl
+ * Places each element of an array as a li in an ul
+ * @param root, The element to at the ul to
+ * @param arr, The array to turn into an ul
  */
+
+/* Function sourced stackoverflow user Ori Drori's answer to 'JavaScript: How to create unordered list from array?'
+    Available at: https://stackoverflow.com/questions/41352837/javascript-how-to-create-unordered-list-from-array */
+function arrToUl(root, arr) {
+    let ul = document.createElement('ul');
+    let li;
+
+    root.appendChild(ul); // append the created ul to the root
+
+    arr.forEach(function(item) {
+        li = document.createElement('li'); // create a new list item
+        li.appendChild(document.createTextNode(item)); // append the text to the li
+        ul.appendChild(li); // append the list item to the ul
+    });
+}
+
+/**
+ * arrToOl
+ * Places each element of an array as a li in an ol
+ * @param root, The element to add the ol to
+ * @param arr, The array to turn into an ol
+ */
+
+/* Function adapted from stackoverflow user Ori Drori's answer to 'JavaScript: How to create unordered list from array?'
+   Available at: https://stackoverflow.com/questions/41352837/javascript-how-to-create-unordered-list-from-array */
+function arrToOl(root, arr) {
+    let ol = document.createElement('ol');
+    let li;
+
+    root.appendChild(ol); // append the created ol to the root
+
+    arr.forEach(function(item) {
+        li = document.createElement('li'); // create a new list item
+        li.appendChild(document.createTextNode(item)); // append the text to the li
+        ol.appendChild(li); // append the list item to the ol
+    });
+}
+
+// Calling functions to create lists from arrays
+arrToUl(ingredientssection, ingredients);
+arrToOl(methodsection, method);
