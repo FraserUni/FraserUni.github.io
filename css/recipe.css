@@ -1,0 +1,199 @@
+/* Body Styling */
+body {
+    grid-template-columns: 5vw 1fr 5vw;
+    grid-template-rows: repeat(4, min-content);
+    font-family: "Verdana", serif;
+    font-size: 1em;
+    margin: 0;
+
+    display: grid;
+}
+
+
+/* Header Styling */
+.header {
+    grid-column: 1/span max;
+    grid-row: 1;
+    background: black;
+    border-bottom-color: rgb(102, 102, 102);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerlogo {
+    padding: 1em;
+    width: clamp(10vw, 25vw, 25vw);
+}
+
+
+/* Navbar Styling */
+.navbar {
+    grid-column: 1/span max;
+    grid-row: 2;
+    background: black;
+    color: white;
+    height: 3em;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: inherit;
+}
+
+.nav-item {
+    text-align: center;
+    height: inherit;
+    width: 100%;
+}
+
+.nav-item:hover, .nav-item:focus-within {
+    box-shadow: inset 0.5em 0 black, inset -0.5em 0 black, inset 0 -0.15em black, inset 0 -0.3em white;
+    color: yellow;
+}
+
+.has-dropdown:focus-within {
+    box-shadow: inset 0.5em 0 black, inset -0.5em 0 black, inset 0 -0.15em black, inset 0 -0.3em yellow;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: inherit;
+}
+
+.dropdown {
+    background: #f9f9f9;
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+    padding: 0;
+
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0;
+
+    display: block;
+}
+
+.dropdown-item:hover {
+    background: #ddd;
+}
+
+.has-dropdown:focus-within .dropdown {
+    display: block;
+}
+
+
+/* Content Grid Styling */
+.content-grid {
+    grid-column: 1/span max;
+    grid-row: 3;
+    grid-template-areas:
+            'recipes';
+    grid-gap: 5vw;
+    padding: 5vw;
+
+    display: grid;
+}
+
+/* Recipe Section Styling */
+#recipe-section {
+    grid-area: recipes;
+    text-align: left;
+    width: 90vw;
+}
+
+#recipe-section h2 {
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+
+#recipe-section h3, p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+#recipe-section img {
+    border-radius: 5%;
+}
+
+
+/* Footer Styling */
+.footer {
+    grid-column: 1/span max;
+    grid-row: 4;
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 1em 5vw;
+}
+
+#footerlogo {
+    width: clamp(10vw, 25vw, 25vw);
+}
+
+#footerslogan {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 1em 0 0 0;
+}
+
+.footerlinks-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1em;
+}
+
+.footerlink-item {
+    text-align: center;
+    padding: 0 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.footerlink-item a {
+    text-decoration: none;
+    font-size: 0.75em;
+    color: white;
+    height: 1em;
+}
+
+.footerlink-item a:hover {
+    text-decoration: underline;
+}
+
+#footercopyright {
+    font-size: 0.6em;
+    margin: 0;
+}
+
+
+
+
