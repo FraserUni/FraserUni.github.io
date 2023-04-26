@@ -128,16 +128,18 @@ let tagline = everyday[localStorage.getItem("recipesEverydayIndex")].tagline;
 let ingredients = everyday[localStorage.getItem("recipesEverydayIndex")].ingredients;
 let method = everyday[localStorage.getItem("recipesEverydayIndex")].method;
 
-if (document.getElementById("recipe-section") != null) {
+if (document.getElementById("recipe-header-section") != null) {
     document.title = `${name} | Recipes, Cooking & More - My Kitchen`;
-    document.getElementById("recipe-section").innerHTML = `
+    document.getElementById("recipe-header-section").innerHTML = `
         <h2>${name}</h2>
         <img src="${image}" alt="${name} Image">
-        <p>${tagline}</p>
-        <h3>Ingredients:</h3>
-        <li>${ingredients}</li>
-        <h3>Method:</h3>  
-        <li>${method}</li>`;
+        <p>${tagline}</p>`;
+    document.getElementById("ingredients-section").innerHTML = `
+        <h2>Ingredients:</h2>
+        <ul>${ingredients}</ul>`;
+    document.getElementById("method-section").innerHTML = `
+        <h2>Method:</h2>  
+        <ul>${method}</ul>`;
 }
 
 

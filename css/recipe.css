@@ -108,32 +108,53 @@ body {
     grid-column: 1/span max;
     grid-row: 3;
     grid-template-areas:
-            'recipes';
-    grid-gap: 5vw;
+            'recipe-header recipe-header'
+            'ingredients method';
+    grid-gap: 2.5vw;
     padding: 5vw;
 
     display: grid;
 }
 
 /* Recipe Section Styling */
-#recipe-section {
-    grid-area: recipes;
-    text-align: left;
-    width: 90vw;
+#recipe-header-section {
+    grid-area: recipe-header;
+    text-align: center;
 }
 
-#recipe-section h2 {
+#recipe-header-section h2 {
     margin: 0;
     padding: 0 0 0.5em 0;
 }
 
-#recipe-section h3, p {
+#recipe-header-section h3, p {
     margin: 0;
     padding: 1em 0;
 }
 
-#recipe-section img {
+#recipe-header-section img {
     border-radius: 5%;
+}
+
+#ingredients-section {
+    grid-area: ingredients;
+    text-align: left;
+}
+
+#method-section {
+    grid-area: method;
+    text-align: left;
+}
+
+#ingredients-section h2, #method-section h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+
+#ingredients-section ul, #method-section ul {
+    margin: 0;
+    padding: 0;
 }
 
 
