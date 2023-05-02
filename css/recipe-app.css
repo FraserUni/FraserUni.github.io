@@ -1,3 +1,6 @@
+/* Code adapted from Make Use of Article 'How to Create a Recipe Book Using HTML, CSS, and JavaScript'
+    Available at: https://www.makeuseof.com/recipe-book-using-html-css-javascript/ */
+
 /* Body Styling */
 body {
     grid-template-columns: 5vw 1fr 5vw;

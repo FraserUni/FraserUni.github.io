@@ -1,3 +1,6 @@
+/* Code sourced from W3 Schools 'How TO - Slideshow'
+   Available at: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

@@ -1,3 +1,6 @@
+/* Code sourced from Make Use of Article 'How to Create a Recipe Book Using HTML, CSS, and JavaScript'
+   Available at: https://www.makeuseof.com/recipe-book-using-html-css-javascript/ */
+
 // Get DOM elements
 const form = document.querySelector('form');
 const recipeList = document.querySelector('#recipe-list');

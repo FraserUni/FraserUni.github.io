@@ -141,6 +141,9 @@ body {
 
 * {box-sizing:border-box}
 
+
+/* Code adapted from W3 Schools 'How TO - Slideshow'
+   Available at: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 /* Slideshow container */
 .slideshow-container {
     grid-area: carousel;
