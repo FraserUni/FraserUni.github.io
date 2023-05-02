@@ -88,13 +88,55 @@ body {
 /* Article Section Styling */
 .article-section {
     grid-area: articles;
-    /* Placeholder to show area */
-    border: 0.1em solid black;
+    text-align: center;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    height: min-content;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 85vh;
+.article-section h1 {
+    grid-area: title;
+    grid-column: 1/span max;
+    grid-row: 1/span 2;
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+
+.article-section h2, h3 {
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+
+.article-section p {
+    margin: 0;
+    padding: 0 0.5em 0.5em;
+}
+
+.article-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.article-section a:hover {
+    text-decoration: underline;
+}
+
+.article-section img {
+    border-radius: 5%;
+    padding: 0 0 0.5em 0;
+}
+
+.article-section #everydayFeatured {
+    grid-area: everydayRecipe;
+}
+
+.article-section #dishesFeatured {
+    grid-area: dishesRecipe;
+}
+
+.article-section #bakingFeatured {
+    grid-area: bakingRecipe;
 }
 
 * {box-sizing:border-box}

@@ -34,7 +34,31 @@
     <div class="content-grid">
         <!-- Articles -->
         <div class="article-section">
-            <h1>Article Section</h1>
+            <h1>Featured Recipes</h1>
+            <div id="#everydayFeatured">
+                <h2>Everyday Recipe</h2>
+                <img src="sources/images/recipes-everyday/sweet-potato-tortilla.webp" alt="Sweet potato Tortilla on Plate">
+                <h3>
+                    <a onclick="setEverydayIndex(4)" href="everyday-recipe.html">Sweet Potato Tortilla</a>
+                </h3>
+                <p>Make this tortilla the night before for a quick and easy lunch</p>
+            </div>
+            <div id="#dishesFeatured">
+                <h2>Dishes</h2>
+                <img src="sources/images/recipes-dishes/vegetarian-chilli-stuffed-peppers.webp" alt="Vegetarian Chilli-Stuffed Peppers on Plate">
+                <h3>
+                    <a onclick="setDishesIndex(3)" href="dishes-recipe.html">Vegetarian Chilli-Stuffed Peppers</a>
+                </h3>
+                <p>A satisfying vegetarian supper that packs in 4 of your 5-a-day</p>
+            </div>
+            <div id="#bakingFeatured">
+                <h2>Baking & Desserts</h2>
+                <img src="sources/images/recipes-baking-and-desserts/peanut-butter-cookies.webp" alt="Peanut Butter Cookies in Jar">
+                <h3>
+                    <a onclick="setBakingIndex(3)" href="baking-recipe.html">Peanut Butter Cookies</a>
+                </h3>
+                <p>With just three ingredients, these simple peanut butter cookies are delightful</p>
+            </div>
         </div>
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -90,5 +114,8 @@
         <p id="footercopyright"> © 2023 Fraser Clark. All rights reserved. </p>
     </div>
     <script src="scripts/slideshow.js"></script>
+    <script src="scripts/everyday.js"></script>
+    <script src="scripts/dishes.js"></script>
+    <script src="scripts/baking.js"></script>
 </body>
 </html>
