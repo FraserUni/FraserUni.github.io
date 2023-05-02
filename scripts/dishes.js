@@ -197,7 +197,6 @@ if (document.getElementById("recipe-header-section") != null) {
  * @param arr, The array to turn into an ul
  */
 
-
 /* Function sourced stackoverflow user Ori Drori's answer to 'JavaScript: How to create unordered list from array?'
     Available at: https://stackoverflow.com/questions/41352837/javascript-how-to-create-unordered-list-from-array */
 function arrToUl(root, arr) {
