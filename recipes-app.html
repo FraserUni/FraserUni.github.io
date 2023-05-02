@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Baking &  Desserts | Recipes, Cooking & More - My Kitchen</title>
+  <title>My Cookbook | Recipes, Cooking & More - My Kitchen</title>
   <link rel="icon" href="/sources/icons/favicon.ico">
-  <link rel="stylesheet" href="/css/recipe.css">
+  <link rel="stylesheet" href="/css/recipe-app.css">
 </head>
 <body>
   <!-- Header -->
@@ -30,14 +30,32 @@
       </li>
     </ul>
   </div>
-  <!-- Content -->
-  <div class="content-grid">
-    <!-- Recipe -->
-    <div id="recipe-header-section">
+  <div class="content">
+    <!-- Add recipes form -->
+    <div class="left-column">
+      <h3>Add Recipe</h3>
+      <form>
+        <label for="recipe-name">Name:</label>
+        <input type="text" id="recipe-name" required>
+        <br>
+        <label for="recipe-ingredients">Ingredients:</label>
+        <textarea id="recipe-ingredients" rows="5" required></textarea>
+        <br>
+        <label for="recipe-method">Method:</label>
+        <textarea id="recipe-method" rows="5" required></textarea>
+        <br>
+        <button type="submit">Add Recipe</button>
+      </form>
     </div>
-    <div id="ingredients-section">
-    </div>
-    <div id="method-section">
+    <!-- Search bar/view recipes list -->
+    <div class="right-column">
+      <div id="search-section">
+        <h3>Recipes List</h3>
+        <label for="search-box">Search:</label>
+        <input type="text" id="search-box">
+      </div>
+      <div id="recipe-list"></div>
+      <div id="no-recipes">You have no recipes.</div>
     </div>
   </div>
   <!-- Footer -->
@@ -66,6 +84,6 @@
     <!-- Copyright Text -->
     <p id="footercopyright"> © 2023 Fraser Clark. All rights reserved. </p>
   </div>
-  <script src="scripts/baking.js"></script>
+  <script src="scripts/mycookbook.js"></script>
 </body>
 </html>
